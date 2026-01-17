@@ -77,7 +77,8 @@ AUFGABE:
 
 Alles auf Deutsch.
 """
-    r = ai.responses.create(model="gpt-5.2-instant", input=prompt)
+    r = ai.responses.create(model="gpt-4o-mini", input=prompt)
+
     content = r.output_text.strip()
 
     await update.message.reply_text(content)
